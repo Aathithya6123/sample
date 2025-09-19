@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+    background-image: url(images/library.png);
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-image: url(images/head\ library.jpg);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #185a9d;
+}
+
+#bookCount {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+#clearAllBtn {
+    padding: 8px 12px;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+#clearAllBtn:hover {
+    background: #ff1e3c;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 350px;
+    margin: 25px auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+.book-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.book-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease-in-out;
+    text-align: left;
+    position: relative;
+}
+
+.book-card h3 {
+    margin: 0;
+}
+
+.book-card p {
+    margin: 5px 0;
+    font-style: italic;
+    color: #777;
+}
+
+.read-btn {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding: 6px 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.read-btn:hover {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+.delete-btn {
+    background: #ff4b5c;
+    padding: 6px 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #ff1e3c;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
